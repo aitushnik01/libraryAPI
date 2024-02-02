@@ -1,8 +1,10 @@
 module.exports = {
     "env": {
         "browser": true,
+        "commonjs": true,
         "es2021": true
     },
+    "extends": "eslint:recommended",
     "overrides": [
         {
             "env": {
@@ -19,10 +21,6 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    plugins: ['node', 'prettier'],
-    extends: ['eslint:recommended', 'plugin:node/recommended', 'prettier'],
-    rules: {
-        'prettier/prettier': 'error'
+    "rules": {
     }
-
 }
